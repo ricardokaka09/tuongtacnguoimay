@@ -1,0 +1,4 @@
+{
+    "mongoURL": "mongodb+srv://dchung:dchung123@cluster0.sylwf.mongodb.net/db?retryWrites=true&w=majority",
+    "jwtSecret": "myToken"
+}
