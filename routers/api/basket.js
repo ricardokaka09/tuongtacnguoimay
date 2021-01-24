@@ -10,7 +10,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const mongURL = config.get('mongoURL')
 
-router.post('/upload',auth,async (req,res)=>{
+router.post('/upload/basket',auth,async (req,res)=>{
     // const {name,description,imgName,timestamp} = req.body;
     const user = await User.findById(req.user.id).select('-password')
     // res.send(user)
