@@ -10,30 +10,34 @@ const path = require('path');
 const mongoose = require('mongoose');
 const mongURL = config.get('mongoURL')
 
-router.post('/upload/basket',auth,async (req,res)=>{
+router.post('/upload',auth,async (req,res)=>{
     // const {name,description,imgName,timestamp} = req.body;
     const user = await User.findById(req.user.id).select('-password')
-    const baskets = await Basket.find({idUser: req.user.id});
-    const basket = baskets.filter(item => item.idProduct == req.body._id)
-    if (!basket) {
-        const dbBasket = new Basket({
-            idUser: req.user.id,
-            idProduct: req.body._id,
-            name: req.body.name,
-            imgName: req.body.imgName,
-            price: req.body.price,
-            quantity: req.body.soluong,
-        })
-        console.log(dbBasket)
-        // dbPost.append('user',req.user.id)
-        Basket.create(dbBasket,(err,data)=>{
-            if(err){
-                res.status(500).send(err)
-            }else{
-                res.status(201).send(data)
-            }
-        })
+    // res.send(user)
+    const baskets = await Basket.findOne({idProduct: req.body._id});
+    if (!baskets) {
+        // const basket = baskets.filter(item => item.idProduct == req.body._id)
+            const dbBasket = new Basket({
+                idUser: req.user.id,
+                idProduct: req.body._id,
+                name: req.body.name,
+                imgName: req.body.imgName,
+                price: req.body.price,
+                quantity: req.body.soluong,
+            })
+            console.log(dbBasket)
+            // dbPost.append('user',req.user.id)
+            Basket.create(dbBasket,(err,data)=>{
+                if(err){
+                    res.status(500).send(err)
+                }else{
+                    res.status(201).send(data)
+                }
+            })
+    }else{
+        res.status(501).send('da ton tai sp')
     }
+        
     // const product = await Product.findById(req.body.idProduct)
     // console.log(req.body.description);
     
