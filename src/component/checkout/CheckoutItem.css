@@ -1,0 +1,92 @@
+.checkoutItem{
+    padding: 20px 30px;
+    background-color: rgb(243, 249, 255);
+    margin: 20px 50px;
+}
+.checkoutItem td > a {
+    color: black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    border-top: 1px solid gray;
+}
+td,th{
+    text-align: left;
+    padding: 5px;
+}
+td{
+    padding: 20px 5px;
+}
+th{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    vertical-align: middle;
+    /* max-width: 100%; */
+}
+.checkoutItem__image{
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+    /* vertical-align: middle; */
+    /* float: left; */
+}
+.checkoutItem__id{
+    display: none;
+}
+table tr:nth-of-type(old){
+    background-color: rgb(112, 148, 177);
+}
+td > svg.MuiSvgIcon-root {
+    /* padding: 50px 5px; */
+    /* margin: 50px 5px; */
+    /* border-top: 1px solid rgb(128, 123, 123); */
+    cursor: pointer;
+    background-color: rgb(99, 221, 99);
+    border-radius: 50%;
+    border: none !important;
+    padding: 2px;
+    color: white;
+    
+}
+td > svg.MuiSvgIcon-root:hover{
+    color: red;
+    background-color: white;
+}
+tr{
+    margin: 20px 30px;
+}
+
+/*----checkoutItem Quantity---- */
+.checkoutItem__quantity{
+    display: flex;
+    position: relative;
+    text-align: left;
+    align-items: center;
+    margin-top: 25px;
+    cursor: pointer;
+    
+    
+}
+.checkoutItem__quantity p :hover{
+    background-color: rgb(132, 145, 145);
+}
+.checkoutItem__quantity input{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2px;
+}
+.checkoutItem__quantity p{
+    margin-top: 2px;
+    margin-left: 2px;
+
+}

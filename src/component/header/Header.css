@@ -1,0 +1,219 @@
+:root {
+  --backgroundHeader: #ffffff;
+  --backgroundMenu: #3abe3a;
+}
+.container {
+  position: relative;
+}
+.header {
+  background-color: var(--backgroundHeader);
+  display: flex;
+  max-height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: static;
+  padding: 5px;
+  z-index: 1;
+  border-bottom: 1px solid #404240;
+}
+.header__logo {
+  object-fit: contain;
+  max-width: 200px;
+  cursor: pointer;
+  height: 150px;
+  /* float: left; */
+}
+.header__search {
+  display: flex;
+  margin: 0px 10px;
+  flex: 1;
+  /* float: left; */
+}
+.header__search input{
+  width: 200px;
+  /* float: left; */
+}
+.header__search input {
+  padding: 10px 5px;
+  width: 100%;
+}
+.header__search input:focus {
+  outline: none;
+}
+.header__search button {
+  background-color: rgb(228, 167, 54) !important;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px;
+  /* float: left; */
+}
+.header__nav a {
+  text-decoration: none;
+}
+.header__option-1 {
+  display:flex;
+  /* flex-direction: column; */
+  padding: 10px;
+  margin: 2px;
+  align-items: center;
+  color: white;
+  right: 0;
+  border-radius: 4px;
+  background-color: #3abe3a;
+}
+.header__option-1 .MuiAvatar-root{
+  width: 20px;
+  height: 20px;
+}
+.header__option {
+  display: inline-block;
+  /* flex-direction: column; */
+  padding: 10px;
+  margin: 2px;
+  color: white;
+  right: 0;
+  /* align-items: center; */
+  border-radius: 4px;
+  background-color: #3abe3a;
+}
+.header__option-1:hover {
+  /* border: 0.1px solid rgb(187, 182, 182); */
+  box-shadow: 1px 4px 2px #939b93;
+  cursor: pointer;
+  color: white;
+}
+.header__option:hover {
+  /* border: 0.1px solid rgb(187, 182, 182); */
+  box-shadow: 1px 4px 2px #939b93;
+  cursor: pointer;
+  color: white;
+}
+.header__option .header__optionLineOne {
+  font-size: 8px;
+}
+.header__option-1 .header__optionLineTwo {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.header__option .header__optionLineTwo {
+  font-size: 12px;
+  font-weight: 600;
+}
+.header__optionBasket {
+  /* display: inline-block; */
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  /* float: right; */
+  /* flex-direction: column; */
+  /* margin-top: 200px; */
+  color: white;
+}
+.header__optionBasketIcon {
+  color: #3abe3a;
+}
+.header__optionBasket span {
+  text-decoration: none;
+  color: #3abe3a;
+}
+
+/* ----Header Menu -------*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgroundMenu);
+  
+}
+.header__menu {
+  padding: 10px 0;
+}
+
+.header__menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+  font-size: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header__menu ul li .header__menu__dropdown {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: #222222;
+  width: 180px;
+  z-index: 9;
+  padding: 5px 0;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  -ms-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header__menu ul li .header__menu__dropdown li {
+  margin-right: 0;
+  display: block;
+}
+
+.header__menu ul li .header__menu__dropdown li:hover > a {
+  color: #fff;
+}
+
+.header__menu ul li .header__menu__dropdown li a {
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 5px 15px;
+}
+
+.header__menu ul li.active a {
+  color: #fff;
+}
+
+.header__menu ul li:hover .header__menu__dropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__menu ul li:hover > a {
+  color: #fff;
+}
+
+.header__menu ul li:last-child {
+  margin-right: 0;
+}
+
+.header__menu ul li a {
+  font-size: 14px;
+  color: #252525;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  -ms-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  padding: 5px 0;
+  display: block;
+}
+
+.logo{
+  height: 130px;
+  width: 140px;
+  
+}

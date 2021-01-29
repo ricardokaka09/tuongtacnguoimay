@@ -1,0 +1,119 @@
+.shop {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+  }
+  .shop_mucluc {
+    width: 200px;
+    padding: 10px 20px;
+  }
+  .shop_mucluc .danhmuc h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .danhmuc ul {
+  }
+  .danhmuc ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .danhgia {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .danhgia1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .danhgia2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .danhgia3 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .danhgia4 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .danhgia img {
+    width: 40px;
+  }
+  .danhgia1 img {
+    width: 40px;
+  }
+  .danhgia_2 img {
+    width: 40px;
+  }
+  .danhgia3 img {
+    width: 40px;
+  }
+  .danhgia4 img {
+    width: 40px;
+  }
+  .sales {
+    margin: 10px 0px;
+  }
+  .sales ul li {
+    display: flex;
+    align-items: center;
+  }
+  .sales ul li p {
+    display: flex;
+    margin-left: 10px;
+  }
+  .shop_mucluc_button {
+    margin-top: 20px;
+  }
+  .shop_mucluc_button button {
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--mauxanh);
+    float: right;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .shop_mucluc_button button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+  .shop_mucluc_button button:focus {
+    outline: none;
+  }
+  
+  .shop_product {
+      margin: 10px 20px;
+      padding: 20px;
+  }
+  .shop_product__tren {
+  }
+  .shop_product__tren-banner {
+    background-image: url('../../styles/img/banner3.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 1;
+    background-color: aqua;
+    min-height: 200px;
+  }
+  .shop_product__tren-option{
+      display: flex;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+  .shop_product__tren-option .optionOne{
+      /* margin-left: 10px; */
+      border: 1px solid lightgray;
+      padding: 5px 10px;
+      
+  }
+  .shop_product__tren-option .optionOne:hover{
+      /* margin-left: 10px; */
+     background-color: var(--mauxanh);
+      
+  }
+  .shop-product__duoi_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

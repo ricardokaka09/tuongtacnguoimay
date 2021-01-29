@@ -1,0 +1,10 @@
+.slide-container .react-slideshow-zoom-wrapper img{
+    height: 300px !important;
+    width: 600px !important;
+}
+.slide-container{
+    z-index: -1000;
+}
+.slide-container .react-slideshow-container .nav{
+    z-index: -1000 !important;
+}

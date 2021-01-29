@@ -1,0 +1,277 @@
+.payment{
+    /* display: flex; */
+    justify-content: center;
+    position: relative;
+    padding-top: 70px;
+    max-height: 100%;
+    padding-bottom: 20px;
+    background-color: rgb(204, 208, 211);
+
+}
+
+.payment__section{
+    display: flex;
+    border-bottom: 1px solid white;
+    margin: 40px 10px;
+    /* border-top: 1px solid gray; */
+}
+.payment__title{
+    flex: 0.3;
+}
+.payment__address , .payment__items,.payment__details{
+    flex: 0.7;
+    margin-right: 50px;
+}
+.payment__items{
+    margin-right: 50px;
+}
+.payment__items table{
+    background-color: white;
+    margin-right: 50px;
+}
+form .StripeElement{
+    background-color: white;
+    padding: 10px 20px;
+}
+.payment__priceContainer{
+    display: flex;
+    /* justify-content: left; */
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    float: center;
+}
+.payment__priceContainer > h3 > span{
+    color: blue;
+    font-size: 22px;
+    font-weight: 800;
+}
+.payment__priceContainer > h3 {
+    margin-top: 20px;
+   
+}
+.payment__priceContainer button{
+    background-color: rgb(211, 59, 59);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+.payment__priceContainer button:hover{
+    background-color: rgb(211, 59, 59);
+    border: none;
+    border-radius: 10px;
+    
+}
+button:focus{
+    outline: 0;
+}
+/*--------Payment Address----------*/
+.container-address{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    position: relative;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+.address-list-text{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.address-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px -20px -20px;
+}
+.address-item{
+    position: relative;
+    flex: 1 0 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    border-radius: 3px;
+    border: 1px dashed rgb(0, 153, 0);
+    margin: 0px 0px 20px 20px;
+    max-width: calc(50% - 20px);
+    padding: 10px 15px;
+}
+.address-item .default{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    font-size: 11px;
+    color: rgb(0, 153, 0);
+}
+.address-item .name{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.address-item .address{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.address-item .phone{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.address-item .action{
+    margin-bottom: 0px;
+}
+.address-item .action .saving-address{
+    margin-right: 7px;
+    border: 1px solid rgb(2, 159, 209);
+    color: rgb(255, 255, 255);
+    background: rgb(0, 182, 240);
+}
+.address-item .action .edit-address{
+    border: 1px solid rgb(204, 204, 204);
+    margin-right: 7px;
+}
+.address-item .action .btn{
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 14px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2px;
+    outline-color: rgb(204, 204, 204);
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247)); */
+    height: 31px;
+    font-size: 12px;
+}
+.op p{
+    margin: 0px 0px 10px;
+}
+
+.AddNewAddress{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.AddNewAddress span{
+    color: rgb(0, 127, 240);
+    cursor: pointer;
+}
+
+.newform{
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: none;
+    border-radius: 0px 0px 3px 3px;
+    margin: 0px auto;
+    padding: 10px 15px;
+    transition: max-height 0.5s ease-out 0s;
+    max-height: 1000px;
+    overflow: hidden;
+}
+.newform .form-container{
+    max-width: 550px;
+    margin: 0px auto;
+}
+.FormItem{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin: 0px 0px 15px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(51, 51, 51);
+}
+.FormItem .button-group{
+    width: 66.6666%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.FormItem .button-group button{
+    flex: 1 0 40%;
+    background: rgb(247, 247, 247);
+    border-color: rgb(225, 225, 225);
+    outline-color: rgb(204, 204, 204);
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.FormItem .button-group .cancel{
+    margin-right: 10px;
+}
+.FormItem .button-group .create-update{
+    background: rgb(0, 182, 240);
+    color: rgb(255, 255, 255);
+}
+.FormItem label{
+    font-weight: 700;
+    width: 33.3333%;
+}
+.FormItem input{
+    width: 66.6666%;
+}
+.FormItem input[type="text"]{
+    width: 66.6666%;
+}
+.FormItem .CheckboxFake{
+    width: 66.6666%;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.FormItem .InputForm{
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    outline: none;
+}
+
+.FormItem .Type_address{
+    width: 66.6666%;
+    box-sizing: border-box;
+    height: 34px;
+    padding: 6px 5px;
+}
+.FormItem .Type_address label{
+    padding: 6px 12px;
+}
+
+.FormItem textarea{
+    width: 66.6666%;
+}
+
+.FillinTextarea{
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    padding: 6px 12px;
+    line-height: 20px;
+    outline: none;
+}
+
