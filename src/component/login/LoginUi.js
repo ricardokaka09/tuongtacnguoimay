@@ -19,6 +19,7 @@ import PropTypes from 'prop-types'
 import {connect } from 'react-redux'
 import './Login.css'
 import { getBasket } from '../../actions/basket';
+import background from '../../styles/img/Login.png'
 
 function Copyright() {
   return (
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: require('../../styles/img/Login.png'),
+    backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],

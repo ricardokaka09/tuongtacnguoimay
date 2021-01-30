@@ -58,12 +58,12 @@ function Header({auth:{user},isAuthenticated,logout,product}){
                     <>
                     <Link to='/signUp'>
                         <div className="header__option" >
-                            <span className="header__optionLineTwo" >Đăng Ki</span>
+                            <span className="header__optionLineTwo" >Đăng Kí</span>
                         </div>
                     </Link>
                     <Link to='/login'>
                         <div className="header__option">
-                            <span className="header__optionLineTwo">Dang Nhap</span>
+                            <span className="header__optionLineTwo">Đăng Nhập</span>
                         </div>
                     </Link>
                     </>}
@@ -94,7 +94,7 @@ function Header({auth:{user},isAuthenticated,logout,product}){
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="/">Trang Chủ</a></li>
-                            <li><a href="./shop">Sản Phẩm</a>
+                            <li><a href="/shop">Sản Phẩm</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details">Rau củ quả</a></li>
                                     <li><a href="./shoping-cart">Trái cây</a></li>

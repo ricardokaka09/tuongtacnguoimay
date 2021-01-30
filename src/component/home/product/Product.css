@@ -438,3 +438,10 @@ p {
   display: block;
 }
 /*---X---ProductDetail-------X---*/
+
+.container__product .title a {
+  color: black;
+}
+.container__product .title a:hover {
+  color: #5a7fe2;
+}

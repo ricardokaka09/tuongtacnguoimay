@@ -20,10 +20,7 @@ import StarBorder from '@material-ui/icons/StarBorder';
 import {abc} from '../../js/script'
 
 function Home(){
-    useEffect(()=>{
-        abc();
-    })
-
+   
     const [open, setOpen] = useState(false);
     const handleClick = () => {
         setOpen(!open);

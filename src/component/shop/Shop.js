@@ -9,12 +9,12 @@ const Shop = ({product}) => {
         <div className="shop">
         <div className="shop_mucluc">
             <div className="danhmuc">
-                <h5>danh muc</h5>
+                <h5>Danh mục</h5>
                 <ul>
-                    <li>Rau cu <p>1000</p></li>
+                    <li>Rau củ <p>1000</p></li>
                     <li>Trái cây <p>123</p></li>
-                    <li>Thit <p>122</p></li>
-                    <li>sưa <p>10</p></li>
+                    <li>Thịt <p>122</p></li>
+                    <li>Sữa <p>10</p></li>
 
                 </ul>
             </div>
@@ -49,10 +49,10 @@ const Shop = ({product}) => {
             <hr/>
             <div className="sales">
                 <ul>
-                    <li><input type="checkbox" name="" id=""/> <p>sp</p></li>
-                    <li><input type="checkbox" name="" id=""/> <p>sp</p></li>
-                    <li><input type="checkbox" name="" id=""/> <p>sp</p></li>
-                    <li><input type="checkbox" name="" id=""/> <p>sp</p></li>
+                    <li><input type="checkbox" name="" id=""/> 0- 20% <p>10</p></li>
+                    <li><input type="checkbox" name="" id=""/>  20- 40% <p>10</p></li>
+                    <li><input type="checkbox" name="" id=""/>  40- 80% <p>10</p></li>
+                    <li><input type="checkbox" name="" id=""/>  80- 100% <p>10</p></li>
                    
                 </ul>
                 
@@ -63,7 +63,7 @@ const Shop = ({product}) => {
             </div>
             <hr/>
             <div className="shop_mucluc_button">
-                <button>Ap dung</button>
+                <button>Áp dụng</button>
             </div>
         </div>
         <div className="shop_product">
@@ -72,10 +72,10 @@ const Shop = ({product}) => {
                     <img src="" alt=""/>
                 </div>
                 <div className="shop_product__tren-option">
-                    <div className="optionOne " >Sap xep theo</div>   
-                    <div className="optionOne" style={{backgroundColor: '#80b435'}}>Lien quan</div>
-                    <div className="optionOne">Ban chay</div>
-                    <div className="optionOne">Gia</div>
+                    <div className="optionOne " >Sắp xếp theo</div>   
+                    <div className="optionOne" style={{backgroundColor: '#80b435'}}>Liên quan</div>
+                    <div className="optionOne">Bán chạy</div>
+                    <div className="optionOne">Giá</div>
                 </div>
             </div>
             <div className="shop_product__duoi">
@@ -89,7 +89,7 @@ const Shop = ({product}) => {
                     <ProductItem product={item}/>
                 ))}
                 {product&&
-                product.products.map((item)=>(
+                product.products.map((item)=>(  
                     <ProductItem product={item}/>
                 ))}
                 </div>

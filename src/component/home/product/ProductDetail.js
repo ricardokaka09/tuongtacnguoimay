@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import {getProductItem} from '../../../actions/post'
 import {createBasket} from '../../../actions/basket'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const ProductDetail = ({
   getProductItem,
@@ -45,7 +46,7 @@ const ProductDetail = ({
     return (
         <div>
         <div className="container__product">
-          <div className="title">Trang chủ &gt; Sản phẩm &gt; Rau xanh &gt; {CategoryName}</div>
+          <div className="title">Trang chủ &gt; <Link to='/shop'>Sản phẩm</Link> &gt; <Link to='/shop'>{CategoryName}</Link> </div>
           <div>
             <div id="hinhanh">
               <img src={`https://nongsan-viet.herokuapp.com/api/product/retrieve/image/single?name=${imgName}`} />
