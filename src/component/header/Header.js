@@ -104,10 +104,10 @@ function Header({auth:{user},isAuthenticated,logout,product}){
                             </li>
                             <li><a href="#">Khuyến Mãi</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details">Giảm giá 10%</a></li>
-                                    <li><a href="./shoping-cart">Giảm giá 20%</a></li>
-                                    <li><a href="./checkout">Giảm giá 30%</a></li>
-                                    <li><a href="./blog-details">Giảm giá 40%</a></li>
+                                    <li><a href="/">Giảm giá 10%</a></li>
+                                    <li><a href="/">Giảm giá 20%</a></li>
+                                    <li><a href="/">Giảm giá 30%</a></li>
+                                    <li><a href="/">Giảm giá 40%</a></li>
                                 </ul>
                             </li>
                             <li><a href="./blog">Blog</a></li>

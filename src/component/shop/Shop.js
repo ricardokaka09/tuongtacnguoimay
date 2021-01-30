@@ -19,6 +19,7 @@ const Shop = ({product}) => {
                 </ul>
             </div>
             <hr/>
+            <div>ĐÁNH GIÁ</div>
             <div className="danhgia">
                     <img src="https://laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png" alt=""/>
                     <img src="https://laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png" alt=""/>
@@ -47,6 +48,7 @@ const Shop = ({product}) => {
                     <img src="https://laz-img-cdn.alicdn.com/tfs/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png" alt=""/>
             </div>
             <hr/>
+            <div>GIẢM GIÁ</div>
             <div className="sales">
                 <ul>
                     <li><input type="checkbox" name="" id=""/> 0- 20% <p>10</p></li>

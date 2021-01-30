@@ -4,19 +4,19 @@ const AddressItem = () => {
     return (
         <div className="addressItem">
             <div className="left">
-                <h5>Ho va ten</h5>
-                <h5>dia chi</h5>
-                <h5>so dien thoai</h5>
+                <h5>Họ và tên</h5>
+                <h5>Địa chỉ</h5>
+                <h5>Số điện thoại</h5>
             </div>  
             <div className="central">
-                <h5>Dang Cong Hung</h5>
-                <h5>Dai Minh,Dai Loc</h5>
+                <h5>Đặng Công Hưng</h5>
+                <h5>Đại Minh,Đại Lộc</h5>
                 <h5>0935629625</h5>
             </div>
             <div className="right">
                 <div className="right__but">
-                    <a>Sua</a>
-                    <a>Xoa</a>
+                    <a>Sửa</a>
+                    <a>Xóa</a>
                 </div>
                <input type="button" value="Thiet lap mac dinh"/>
             </div>

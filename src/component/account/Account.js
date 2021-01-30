@@ -8,8 +8,10 @@ import VoucherItem from './VoucherItem'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { useEffect } from 'react'
+import PropTypes from 'prop-types'
+import {connect } from 'react-redux'
 
-const Account = () => {
+const Account = ({auth: {user}}) => {
     const [day,setDay] =  useState([1,2,3,4,5,6,7,8,9,10,11,12])
     const [month,setMonth] =  useState([1,2,3,4,5,6,7,8,9,10,11,12])
     const [year,setYear] =  useState([1990,1991,1992,1993,1994,1995,1996,1999,2000])
@@ -67,8 +69,8 @@ const Account = () => {
                         <div className='account__info-avatar'>
                             <Avatar/>
                             <div className="account__info-name">
-                                <h4>Dang Cong Hung</h4>
-                                <span>Sua thong tin</span>
+                                <h4>{user.name}</h4>
+                                <span>Sửa thông tin</span>
                             </div>
                         </div>
                         
@@ -77,11 +79,11 @@ const Account = () => {
                     <hr/>
                     <div className="account__info__list-b">
                         <ul>
-                            <li onClick={Acc} style={{color:`${color}`}}><a style={{color:`${color}`}}>Tai khoan cua toi</a> <ArrowForwardIosIcon/></li>
-                            <li onClick={Buyer} style={{color:`${color1}`}}><a style={{color:`${color1}`}}>Don mua</a>  <ArrowForwardIosIcon/></li>
-                            <li onClick={Noti} style={{color:`${color2}`}}><a style={{color:`${color2}`}}>thong bao</a> <ArrowForwardIosIcon/></li>
-                            <li onClick={Voucher} style={{color:`${color3}`}}><a style={{color:`${color3}`}}>Vi voucher </a> <ArrowForwardIosIcon/></li>
-                            <li onClick={Address} style={{color:`${color4}`}}><a style={{color:`${color4}`}}>So dia chi</a> <ArrowForwardIosIcon/></li>
+                            <li onClick={Acc} style={{color:`${color}`}}><a style={{color:`${color}`}}>Tài khoản của tôi</a> <ArrowForwardIosIcon/></li>
+                            <li onClick={Buyer} style={{color:`${color1}`}}><a style={{color:`${color1}`}}>Đơn mua</a>  <ArrowForwardIosIcon/></li>
+                            <li onClick={Noti} style={{color:`${color2}`}}><a style={{color:`${color2}`}}>Thông báo</a> <ArrowForwardIosIcon/></li>
+                            <li onClick={Voucher} style={{color:`${color3}`}}><a style={{color:`${color3}`}}>Ví voucher </a> <ArrowForwardIosIcon/></li>
+                            <li onClick={Address} style={{color:`${color4}`}}><a style={{color:`${color4}`}}>Số địa chỉ</a> <ArrowForwardIosIcon/></li>
                         </ul>
                     </div>
                 </div>
@@ -91,46 +93,46 @@ const Account = () => {
             <div className="account__detail">
             <div className="account__detail__content">
                     <div className="account__detail-title">
-                        <h4>Tai Khoan</h4>
+                        <h4>Tài khoản</h4>
                     </div>
                     <hr/>
                     <div className="account__detail-content">
                         <div className="account__detail-content-tr">
                             <tr>
-                                <td>Ten Dang Nhap:</td>
-                                <td className='info-change'><h5>Dang Cong Hung</h5></td>
+                                <td>Tên Đăng Nhập:</td>
+                                <td className='info-change'><h5>Đặng Công Hưng</h5></td>
                                 
                             </tr>
                             <tr>
-                                <td>Ten:</td>
+                                <td>Tên:</td>
                                 <td className='info-change'><input type="text"/></td>
                                 
                             </tr>
                             <tr>
                                 <td>Email:</td>
-                                <td className='info-change'>hung@gmail.com <a href="#">thay doi</a></td>
+                                <td className='info-change'>hung@gmail.com <a href="#">thay đổi</a></td>
                                 
                             </tr>
                             <tr>
-                                <td>So dien thoai:</td>
-                                <td className='info-change'>0905466090 <a href="#">thay doi</a></td>
+                                <td>Số điệnn thoại:</td>
+                                <td className='info-change'>0905466090 <a href="#">thay đổi</a></td>
                                 
                             </tr>
                             <tr>
-                                <td>Gioi tinh:</td>
+                                <td>Giới tính:</td>
                                 <td className='info-change'>
                                     <input type="radio" checked name="Nam" id="Nam"/>
                                     <label htmlFor="Nam">Nam</label>
                                     <input type="radio" name="Nam" id="Nu"/>
-                                    <label htmlFor="Nu">Nu</label>
+                                    <label htmlFor="Nu">Nữ</label>
                                     <input type="radio" name="Nam" id="Khac"/>
-                                    <label htmlFor="Khac">Khac</label>
+                                    <label htmlFor="Khac">Khác</label>
                                 
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td>Ngay sinh:</td>
+                                <td>Ngày sinh:</td>
                                 <td className='info-change'>
                                     <select name="" id="day">
                                         {day.map((item,index)=>
@@ -156,7 +158,7 @@ const Account = () => {
                             <Avatar className='avatar'/>
                             <div className="choose__avatar">
                                 <input type="file" id='file' />
-                                <button htmlFor="file">Chon anh</button>
+                                <button htmlFor="file">Chọn ảnh</button>
                             </div>
                         </div>
                     </div>
@@ -168,12 +170,12 @@ const Account = () => {
             <div className="account__detail">
             <div className="account__detail__content">
                     <div className="account__detail-title">
-                        <h4>Don hang cua toi</h4>
+                        <h4>Đơn hàng của tôi</h4>
                     </div>
                     <hr/>
                     <div className="account__detail-content-option">
-                            <h4 className='active'>Don hang da mua</h4>
-                            <h4>Don hang da Huy</h4>
+                            <h4 className='active'>Đơn hàng đã mua</h4>
+                            <h4>Đơn hàng đã hủy</h4>
                     </div>
                     <div className="account__detail-content__order">
                         
@@ -211,7 +213,7 @@ const Account = () => {
             <div className="account__detail">
             <div className="account__detail__content">
                     <div className="account__detail-title">
-                        <h4>Thong bao cua toi</h4>
+                        <h4>Thông báo của tôi</h4>
                     </div>
                     <hr/>
                     <div className="account__detail__content__notification">
@@ -233,16 +235,16 @@ const Account = () => {
                 <div className="account__detail">
                 <div className="account__detail__content">
                         <div className="account__detail-title">
-                            <h4>Voucher cua toi</h4>
+                            <h4>Voucher của tôi</h4>
                         </div>
                         <hr/>
                         
                         <div className="account__detail__content__voucher">
                             <div className="account__detail-content">
                                 <div className="account__detail-content-state">
-                                    <h4>Trang Thai: </h4>
+                                    <h4>Trạng thái: </h4>
                                     <select name="" id="">
-                                        <option value="yes">Con han</option>
+                                        <option value="yes">Còn hàng</option>
                                         <option value="no">Het han</option>
                                     </select>
                                     <input type="button" value="Tim Kiem"/>
@@ -266,7 +268,7 @@ const Account = () => {
                 <div className="account__detail">
                 <div className="account__detail__content">
                         <div className="account__detail-title">
-                            <h4>Address</h4>
+                            <h4>Địa chỉ</h4>
                         </div>
                         <hr/>
                         
@@ -275,7 +277,7 @@ const Account = () => {
                                 <div className="account__detail-content-add">
                                     {/* icon  plus*/}
                                     <AddCircleOutlineIcon/>
-                                    <p>Them dia chi moi</p>
+                                    <p>Thêm địa chỉ mới</p>
                                 </div>
                                 <div className="account__detail-content-addess">
                                     <AddressItem/>
@@ -293,5 +295,10 @@ const Account = () => {
         </div>
     )
 }
-
-export default Account
+Account.propTypes = {
+    auth : PropTypes.object.isRequired,
+}
+const mapToStateProps = state =>({
+    auth : state.auth
+})
+export default connect(mapToStateProps)(Account)
