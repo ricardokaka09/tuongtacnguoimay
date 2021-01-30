@@ -127,8 +127,7 @@ p {
   /* background-color: #00ff00; */
 }
 .danhgia2 {
-  margin-left: 170px;
-  width: 1160px;
+  margin: 10px 50px;
   flex-direction: column;
 }
 
@@ -394,12 +393,10 @@ p {
   position: relative;
   top: 1px;
 }
-/* This button was generated using http://tools.ngoisaoso.vn/css3button/ */
 
 .tabs {
   display: flex;
-  width: 1160px;
-  margin-left: 170px;
+  margin: 10px 50px;
 }
 .tablinks {
   border: none;
@@ -444,4 +441,18 @@ p {
 }
 .container__product .title a:hover {
   color: #5a7fe2;
+}
+
+.danhGia {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 30px;
+  border: 1px solid lightgray;
+}
+.danhGia .danhGia__info {
+  margin-left: 10px;
+}
+.wirte input {
+  padding: 10px 5px;
+  font-size: 16px;
 }

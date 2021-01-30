@@ -6,6 +6,8 @@ import {getProductItem} from '../../../actions/post'
 import {createBasket} from '../../../actions/basket'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Product from './Product'
+import DanhGia from './DanhGia'
 
 const ProductDetail = ({
   getProductItem,
@@ -78,6 +80,13 @@ const ProductDetail = ({
             </div>
           </div>
         </div>
+        <div className="home__sp__2">
+
+                            <Product 
+                            title='Sản phẩm tương tương tự'
+                
+                            />
+                </div>
         {/* <div className="danhgia">Đánh giá</div> */}
           <div className="tabs">
             <button className={`tablinks ${open?active:''}`}  data-electronic="allproducts" onClick={()=>setClose()}>Mô tả</button>
@@ -86,44 +95,20 @@ const ProductDetail = ({
           </div>
           {open&&<div className="danhgia2">
           <h3>Mô tả</h3>
-          <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus
-            suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
-            vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
-            Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat,
-            accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
-            pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula
-            elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
-            et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-            vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
-          <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
-            elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-            porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
-            nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed
-            porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum
-            sed sit amet dui. Proin eget tortor risus.</p>
+          <p>San pham chat luong, đ</p>
+          
         </div>}
         {/* Tab content */}
         <div className="wrapper_tabcontent">
           {open1&&<div id="allproducts" className="danhgia2">
             <h3>Nhận xét và đánh giá</h3>
-            <p>sp dung tot</p>
-            <p>demo</p>
+              <DanhGia/>
           </div>}
           {open2&&<div id="Microcontrollers" className="danhgia2">
             <h3>Viết đánh giá</h3>
-            <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-              Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus
-              suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
-              vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
-              Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat,
-              accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
-              pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula
-              elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
-              et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-              vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
+            <div className="wirte">
+              <input type="text" placeholder='viet danh gia'/>
+            </div>
             {/*  <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
 	        ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
 	        elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
