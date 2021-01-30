@@ -1,0 +1,115 @@
+.login {
+  background-image: url('https://www.bynarycodes.com/wp-content/uploads/2018/07/word-image.jpg');
+  /* background-image: ; */
+  background-position: 100px;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 70px; */
+}
+.login__container {
+  border: 1px solid #cecccc;
+  background-color: transparent;
+  margin: 80px 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+}
+.login__container form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid #cecccc; */
+}
+.login__container form input {
+  font-size: 14px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+.login__container form h5 {
+  font-size: 14px;
+}
+.login__container form .login__signInButton {
+  margin-top: 20px;
+  border: 1px solid #ebc854;
+  background-color: #ebc854;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.login__container form .login__signInButton:focus {
+  outline: none;
+}
+/* login with face,google */
+.login_signInWithGF {
+  display: flex;
+  transform: translateY(-50%, 0);
+  justify-content: center;
+  /* max-width:400px; */
+}
+.login__withGoogle {
+  margin-top: 20px;
+  background-color: #e2a343;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 150px;
+  margin-right: 10px;
+}
+.login__google {
+  background-color: #e2a343;
+  padding: 10px;
+  border: none;
+  top: 0px;
+  color: white;
+  cursor: pointer;
+}
+.login__google:focus {
+  outline: 0;
+}
+.login__withGoogle img {
+  /* width: 100%; */
+  object-fit: contain;
+  height: 25px;
+  width: 25px;
+}
+.login__withFace {
+  margin-top: 20px;
+  background-color: #266c9b;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 150px;
+}
+.login__facebook {
+  background-color: #266c9b;
+  padding: 10px;
+  border: none;
+  top: 0px;
+  color: white;
+  cursor: pointer;
+}
+.login__facebook:focus {
+  outline: 0;
+}
+.login__withFace img {
+  /* width: 100%; */
+  object-fit: contain;
+  height: 30px;
+  width: 30px;
+}
